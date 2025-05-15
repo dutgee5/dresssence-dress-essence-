@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="siy1">#1A1A1A</color>
+    <color name="siy2">#333333</color>
+    <color name="siy3">#4D4D4D</color>
+
+    <color name="gre1">#666666</color>
+    <color name="gre2">#808080</color>
+    <color name="gre3">#999999</color>
+
+    <color name="gre4">#B3B3B3</color>
+    <color name="gre5">#CCCCCC</color>
+    <color name="gre6">#E6E6E6</color>
+
+    <color name="yes">#0C9409</color>
+    <color name="kir">#ED1010</color>
+
+
+</resources>
