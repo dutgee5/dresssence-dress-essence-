@@ -5,9 +5,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
+import com.example.dressence.data.entity.CategoryItem
 import com.example.dressence.databinding.ButtontasarimBinding
 
-class CategoryItemAdapter(var mContext:Context,var categoryItem:Int):RecyclerView.Adapter<CategoryItemAdapter.CategoryItemHolder>() {
+class CategoryItemAdapter(var mContext:Context,var categoryItem:List<CategoryItem>):RecyclerView.Adapter<CategoryItemAdapter.CategoryItemHolder>() {
 
     inner class CategoryItemHolder(var tasarim:ButtontasarimBinding):RecyclerView.ViewHolder(tasarim.root)
 
@@ -24,16 +25,16 @@ class CategoryItemAdapter(var mContext:Context,var categoryItem:Int):RecyclerVie
 
     override fun onBindViewHolder(holder: CategoryItemAdapter.CategoryItemHolder, position: Int) {
 
-        val categoryItem2  = categoryItem.get(position)
+        val category = categoryItem.get(position) // dongu mekanizması var diyebiliriz
 
-        val t = holder.tasarim
+        var t = holder.tasarim
 
-        t.cardButton.text = categoryItem2.
+        t.cardButton.text = category.categoryName
+
     }
 
     override fun getItemCount(): Int {
-        // kac kere calisacagi
-        return categoryItem.size
+        return 5
     }
 
 }

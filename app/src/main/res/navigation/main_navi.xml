@@ -3,30 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navi"
-    app:startDestination="@id/homeFragment">
-
+    app:startDestination="@id/home">
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/home"
         android:name="com.example.dressence.ui.screens.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/searchFragment"
+        android:id="@+id/search"
         android:name="com.example.dressence.ui.screens.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
-        android:id="@+id/savedFragment"
+        android:id="@+id/saved"
         android:name="com.example.dressence.ui.screens.SavedFragment"
         android:label="fragment_saved"
         tools:layout="@layout/fragment_saved" />
     <fragment
-        android:id="@+id/cartFragment"
+        android:id="@+id/cart"
         android:name="com.example.dressence.ui.screens.CartFragment"
         android:label="fragment_cart"
         tools:layout="@layout/fragment_cart" />
     <fragment
-        android:id="@+id/accountFragment"
+        android:id="@+id/account"
         android:name="com.example.dressence.ui.screens.AccountFragment"
         android:label="fragment_account"
         tools:layout="@layout/fragment_account" />
