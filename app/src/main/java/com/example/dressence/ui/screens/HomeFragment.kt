@@ -9,8 +9,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.dressence.R
 import com.example.dressence.data.entity.CategoryItem
+import com.example.dressence.data.entity.Product
 import com.example.dressence.databinding.FragmentHomeBinding
 import com.example.dressence.ui.adapter.CategoryItemAdapter
+import com.example.dressence.ui.adapter.ProductItemAdapter
 
 
 class HomeFragment : Fragment() {
@@ -25,25 +27,10 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater,container,false)
 
 
-        val categorNa = ArrayList<CategoryItem>()
-        val k1 = CategoryItem(1,"All")
-        val k2 = CategoryItem(2,"Tshirts")
-        val k3 = CategoryItem(3,"Jeans")
-        val k4 = CategoryItem(4,"Shoes")
-        val k5 = CategoryItem(5,"Hoodie")
-
-        categorNa.add(k1)
-        categorNa.add(k2)
-        categorNa.add(k3)
-        categorNa.add(k4)
-        categorNa.add(k5)
-
-        val adapter = CategoryItemAdapter(requireContext(),categorNa)
-        binding.categoryRV.adapter =adapter
-
         binding.categoryRV.layoutManager =StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.HORIZONTAL)
 
 
+        binding.productRV.layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
         return binding.root
     }
 

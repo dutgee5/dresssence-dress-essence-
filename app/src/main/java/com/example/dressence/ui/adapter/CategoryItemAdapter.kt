@@ -34,7 +34,7 @@ class CategoryItemAdapter(var mContext:Context,var categoryItem:List<CategoryIte
     }
 
     override fun getItemCount(): Int {
-        return 5
+        return categoryItem.size
     }
 
 }

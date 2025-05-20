@@ -1,5 +1,6 @@
 package com.example.dressence.data.dataSource
 
+import com.example.dressence.data.entity.CategoryItem
 import com.example.dressence.room.CategoryDao
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -14,4 +15,9 @@ class CategoryDatasource(var categoryDao:CategoryDao) {
 //        return@withContext categoryDao.kategoriGetir()
 //    }
 
+
+    suspend fun kategorileriGetir():List<CategoryItem> = withContext(Dispatchers.IO){
+
+        return@withContext categoryDao.kategorileriGetir()
+    }
 }

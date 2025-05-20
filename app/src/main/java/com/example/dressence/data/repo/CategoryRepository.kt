@@ -5,7 +5,7 @@ import com.example.dressence.room.CategoryDao
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class CategoryRepository(var categoryDao: CategoryDao) {
+class CategoryRepository(var categoryDatasource: CategoryDatasource) {
 
    // abbacım benim func olucak suspand
 
